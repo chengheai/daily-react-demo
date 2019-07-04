@@ -5,7 +5,7 @@ import Link from 'umi/link';
 export default function() {
   return (
     <div>
-      <h1 className={styles.title}>DEMO</h1>
+      <h1 className={styles.title}>React DEMO 测试</h1>
       <div style={{ padding: '15px 8px' }}>
         <Row>
           <Col xs={6} sm={6} md={6} lg={3} xl={2}>
