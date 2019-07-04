@@ -1,9 +1,10 @@
-import styles from './index.css';
+
+import styles from './products.css';
 
 export default function() {
   return (
     <div className={styles.normal}>
-      <h2>欢迎来到umi日常demo</h2>
+      <h1>Page products</h1>
     </div>
   );
 }
