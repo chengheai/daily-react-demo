@@ -10,6 +10,9 @@ export default class Menu extends React.Component {
       stNumber: 1
     }
   }
+  componentWillMount(){
+    console.log('组件进来了啊')
+  }
   changeStyle(){
     this.setState({
       // stNumber: this.state.stNumber + 1
