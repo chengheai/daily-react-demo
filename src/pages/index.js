@@ -7,7 +7,7 @@ export default class Menu extends React.Component {
   constructor(){
     super()
     this.state = {
-      stNumber: 1
+      stNumber: 3
     }
   }
   componentWillMount(){
