@@ -38,7 +38,7 @@ export default class Header extends Component {
         </Button>
         <h1 className={styles.title}>React DEMO 测试</h1>
         <Button type="link" style={{ color: 'white' }}>
-          当前页面 [ {this.filterName(this.props.location.pathname)} ]
+          当前位置 [ {this.filterName(this.props.location.pathname)} ]
         </Button>
       </div>
     );
