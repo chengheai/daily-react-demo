@@ -1,35 +1,45 @@
-
-import styles from './index.css';
-import { Button, Col, Row } from 'antd';
-import Link from 'umi/link';
-export default function() {
-  return (
-    <div>
-      <h1 className={styles.title}>React DEMO 测试</h1>
-      <div style={{ padding: '15px 8px' }}>
-        <Row>
-          <Col xs={6} sm={6} md={6} lg={3} xl={2}>
-            <Link to="/">
-              <Button type="primary">首页</Button>
-            </Link>
-          </Col>
-          <Col xs={6} sm={6} md={6} lg={3} xl={2}>
-            <Link to="/antd">
-              <Button type="primary">antd</Button>
-            </Link>
-          </Col>
-          <Col xs={6} sm={6} md={6} lg={3} xl={2}>
-            <Link to="/products">
-              <Button type="primary">products</Button>
-            </Link>
-          </Col>
-          <Col xs={6} sm={6} md={6} lg={3} xl={2}>
-            <Link to="/recursion">
-              <Button type="primary">递归</Button>
-            </Link>
-          </Col>
-        </Row>
+import styles from './index.less';
+import { Button, Icon } from 'antd';
+import router from 'umi/router';
+import withRouter from 'umi/withRouter';
+import React, { Component } from 'react';
+import formats from './../utils/resource';
+console.log(formats);
+export default class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+    };
+  }
+  goBack = () => {
+    router.push('/');
+  };
+  componentDidMount() {
+    this.setState({
+      title: this.props.location.pathname,
+    });
+  }
+  filterName = path => {
+    let name = '';
+    formats.routes.forEach(i => {
+      if (i.path === path) {
+        name = i.name;
+      }
+    });
+    return name;
+  };
+  render() {
+    return (
+      <div className={styles.header_wrap}>
+        <Button type="link" onClick={this.goBack}>
+          <Icon type="left" />
+          返回
+        </Button>
+        <h1 className={styles.title}>React DEMO 测试</h1>
+        <h2>当前页面：{this.filterName(this.props.location.pathname)}</h2>
       </div>
-    </div>
-  );
+    );
+  }
 }
+Header = withRouter(Header);

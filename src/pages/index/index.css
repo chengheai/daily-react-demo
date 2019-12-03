@@ -4,14 +4,14 @@
 }
 
 .bg {
-  background: url('./../assets/bg.jpg') no-repeat;
+  background: url('./../../assets/bg.jpg') no-repeat;
   background-size: cover;
-  height: calc(100vh - 118px);
+  height: calc(100vh - 56px);
 }
 
 .welcome {
   height: 328px;
-  background: url(../assets/yay.jpg) no-repeat center 0;
+  background: url(../../assets/yay.jpg) no-repeat center 0;
   background-size: 388px 328px;
 }
 
@@ -89,55 +89,55 @@ a.repeat {
 }
 
 .animate span:nth-of-type(2) {
-  animation-delay: .05s;
+  animation-delay: 0.05s;
 }
 
 .animate span:nth-of-type(3) {
-  animation-delay: .1s;
+  animation-delay: 0.1s;
 }
 
 .animate span:nth-of-type(4) {
-  animation-delay: .15s;
+  animation-delay: 0.15s;
 }
 
 .animate span:nth-of-type(5) {
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
 .animate span:nth-of-type(6) {
-  animation-delay: .25s;
+  animation-delay: 0.25s;
 }
 
 .animate span:nth-of-type(7) {
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 
 .animate span:nth-of-type(8) {
-  animation-delay: .35s;
+  animation-delay: 0.35s;
 }
 
 .animate span:nth-of-type(9) {
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 .animate span:nth-of-type(10) {
-  animation-delay: .45s;
+  animation-delay: 0.45s;
 }
 
 .animate span:nth-of-type(11) {
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .animate span:nth-of-type(12) {
-  animation-delay: .55s;
+  animation-delay: 0.55s;
 }
 
 .animate span:nth-of-type(13) {
-  animation-delay: .6s;
+  animation-delay: 0.6s;
 }
 
 .animate span:nth-of-type(14) {
-  animation-delay: .65s;
+  animation-delay: 0.65s;
 }
 
 /* Animation One */
@@ -151,7 +151,7 @@ a.repeat {
 
 @keyframes revolveScale {
   60% {
-    transform: translate(20px, 20px) rotate(30deg) scale(.3);
+    transform: translate(20px, 20px) rotate(30deg) scale(0.3);
   }
   100% {
     transform: translate(0) rotate(0) scale(1);
@@ -170,7 +170,7 @@ a.repeat {
 
 @keyframes ballDrop {
   60% {
-    transform: translate(0, 20px) rotate(-180deg) scale(.5);
+    transform: translate(0, 20px) rotate(-180deg) scale(0.5);
   }
   100% {
     transform: translate(0) rotate(0deg) scale(1);
@@ -221,7 +221,7 @@ a.repeat {
     transform: translate(0, -50px) rotate(180deg) scale(1);
   }
   60% {
-    transform: translate(0, 20px) scale(.8) rotate(0deg);
+    transform: translate(0, 20px) scale(0.8) rotate(0deg);
   }
   100% {
     transform: translate(0) scale(1) rotate(0deg);
@@ -243,7 +243,7 @@ a.repeat {
     transform: translate(0, -50px) rotate(180deg) scale(1);
   }
   50% {
-    transform: translate(0, 20px) scale(.8) rotate(0deg);
+    transform: translate(0, 20px) scale(0.8) rotate(0deg);
     opacity: 1;
   }
   80% {
@@ -280,13 +280,13 @@ a.repeat {
 .seven span {
   color: #348c04;
   opacity: 0;
-  transform: translate(-150px, 0) scale(.3);
+  transform: translate(-150px, 0) scale(0.3);
   animation: leftRight 3s infinite;
 }
 
 @keyframes leftRight {
   40% {
-    transform: translate(50px, 0) scale(.7);
+    transform: translate(50px, 0) scale(0.7);
     opacity: 1;
     color: #348c04;
   }

@@ -1,4 +1,4 @@
-import styles from './index.css';
+import styles from './index.less';
 import Header from './Header'
 import Footer from './Footer'
 function BasicLayout(props) {
