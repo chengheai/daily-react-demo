@@ -37,7 +37,9 @@ export default class Header extends Component {
           返回
         </Button>
         <h1 className={styles.title}>React DEMO 测试</h1>
-        <h2>当前页面：{this.filterName(this.props.location.pathname)}</h2>
+        <Button type="link" style={{ color: 'white' }}>
+          当前页面 [ {this.filterName(this.props.location.pathname)} ]
+        </Button>
       </div>
     );
   }
