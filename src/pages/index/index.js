@@ -6,23 +6,25 @@ import Link from 'umi/link';
 let greeting = sayHello().split('');
 export default class Menu extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      stNumber: 3
-    }
+      stNumber: 3,
+    };
   }
   componentWillMount() {
-    console.log('组件进来了啊')
+    console.log('组件进来了啊');
   }
   changeStyle() {
-    this.setState({
-      // stNumber: this.state.stNumber + 1
-    }, () => {
-      this.state.stNumber >= 7
-        ? this.setState({ stNumber: 1 })
-        : this.setState({ stNumber: this.state.stNumber + 1 });
-    });
-
+    this.setState(
+      {
+        // stNumber: this.state.stNumber + 1
+      },
+      () => {
+        this.state.stNumber >= 7
+          ? this.setState({ stNumber: 1 })
+          : this.setState({ stNumber: this.state.stNumber + 1 });
+      },
+    );
   }
   render() {
     let { stNumber } = this.state;
@@ -47,12 +49,17 @@ export default class Menu extends React.Component {
             </Col>
             <Col xs={6} sm={6} md={6} lg={3} xl={2}>
               <Link to="/skeleton">
-                <Button >产品</Button>
+                <Button>产品</Button>
               </Link>
             </Col>
             <Col xs={6} sm={6} md={6} lg={3} xl={2}>
               <Link to="/recursion">
                 <Button type="dashed">递归</Button>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+              <Link to="/props">
+                <Button>组件通信</Button>
               </Link>
             </Col>
           </Row>
@@ -63,17 +70,17 @@ export default class Menu extends React.Component {
               stNumber === 1
                 ? styles.one
                 : stNumber === 2
-                  ? styles.two
-                  : stNumber === 3
-                    ? styles.three
-                    : stNumber === 4
-                      ? styles.four
-                      : stNumber === 5
-                        ? styles.five
-                        : stNumber === 6
-                          ? styles.six
-                          : styles.seven
-              }`}
+                ? styles.two
+                : stNumber === 3
+                ? styles.three
+                : stNumber === 4
+                ? styles.four
+                : stNumber === 5
+                ? styles.five
+                : stNumber === 6
+                ? styles.six
+                : styles.seven
+            }`}
           >
             {greeting.map((item, index) => {
               return <span key={index}>{item}</span>;

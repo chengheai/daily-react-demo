@@ -32,10 +32,14 @@ export default class Header extends Component {
   render() {
     return (
       <div className={styles.header_wrap}>
-        <Button type="link" onClick={this.goBack}>
-          <Icon type="left" />
-          返回
-        </Button>
+        {this.props.location.pathname !== '/' ? (
+          <Button type="link" onClick={this.goBack}>
+            <Icon type="left" />
+            返回
+          </Button>
+        ) : (
+          'Home'
+        )}
         <h1 className={styles.title}>React DEMO 测试</h1>
         <Button type="link" style={{ color: 'white' }}>
           当前位置 [ {this.filterName(this.props.location.pathname)} ]
