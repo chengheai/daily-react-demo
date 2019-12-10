@@ -4,7 +4,6 @@ import router from 'umi/router';
 import withRouter from 'umi/withRouter';
 import React, { Component } from 'react';
 import formats from './../utils/resource';
-console.log(formats);
 export default class Header extends Component {
   constructor(props) {
     super(props);

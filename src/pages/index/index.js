@@ -12,7 +12,7 @@ export default class Menu extends React.Component {
     };
   }
   componentWillMount() {
-    console.log('组件进来了啊');
+    // console.log('组件进来了啊');
   }
   changeStyle() {
     this.setState(
@@ -62,6 +62,11 @@ export default class Menu extends React.Component {
                 <Button>组件通信</Button>
               </Link>
             </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+              <Link to="/lifecycle">
+                <Button>生命周期</Button>
+              </Link>
+            </Col>
           </Row>
         </div>
         <div className={styles.container}>
@@ -70,17 +75,17 @@ export default class Menu extends React.Component {
               stNumber === 1
                 ? styles.one
                 : stNumber === 2
-                ? styles.two
-                : stNumber === 3
-                ? styles.three
-                : stNumber === 4
-                ? styles.four
-                : stNumber === 5
-                ? styles.five
-                : stNumber === 6
-                ? styles.six
-                : styles.seven
-            }`}
+                  ? styles.two
+                  : stNumber === 3
+                    ? styles.three
+                    : stNumber === 4
+                      ? styles.four
+                      : stNumber === 5
+                        ? styles.five
+                        : stNumber === 6
+                          ? styles.six
+                          : styles.seven
+              }`}
           >
             {greeting.map((item, index) => {
               return <span key={index}>{item}</span>;
