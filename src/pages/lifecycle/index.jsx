@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
-
+import { Carousel } from 'antd';
+import img1 from './../../assets/images/WechatIMG139.png';
+import img2 from './../../assets/images/WechatIMG140.png';
+import img3 from './../../assets/images/WechatIMG141.png';
+import img4 from './../../assets/images/WechatIMG142.png';
+import img5 from './../../assets/images/WechatIMG143.png';
+import img6 from './../../assets/images/WechatIMG144.png';
+import img7 from './../../assets/images/WechatIMG145.png';
+import img8 from './../../assets/images/WechatIMG384.png';
 export default class Index extends Component {
   constructor(props) {
     super(props);
@@ -12,8 +20,17 @@ export default class Index extends Component {
     // 组件挂载前触发
   }
   render() {
+    var imgArr = [img1, img2, img3, img4, img5, img6, img7, img8];
     console.log('render...');
-    return <h2>Old React.Component</h2>;
+    return (
+      <div>
+        <Carousel autoplay>
+          {imgArr.map((o, i) => {
+            return <img style={{ width: '800px', height: '80%' }} src={o} key={i} alt="" />;
+          })}
+        </Carousel>
+      </div>
+    );
   }
   componentDidMount() {
     // 组件挂载后触发
