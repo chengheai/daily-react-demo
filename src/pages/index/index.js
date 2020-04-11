@@ -67,6 +67,11 @@ export default class Menu extends React.Component {
                 <Button>生命周期</Button>
               </Link>
             </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+              <Link to="/like">
+                <Button>like</Button>
+              </Link>
+            </Col>
           </Row>
         </div>
         <div className={styles.container}>
