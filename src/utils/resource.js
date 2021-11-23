@@ -7,6 +7,7 @@ let TYPE = (() => {
       { path: '/recursion', name: '递归' },
       { path: '/props', name: '组件通信' },
       { path: '/lifecycle', name: '生命周期' },
+      { path: '/message', name: 'message' },
     ],
   };
 })();

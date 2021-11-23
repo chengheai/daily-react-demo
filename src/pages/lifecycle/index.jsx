@@ -8,6 +8,7 @@ import img5 from './../../assets/images/WechatIMG143.png';
 import img6 from './../../assets/images/WechatIMG144.png';
 import img7 from './../../assets/images/WechatIMG145.png';
 import img8 from './../../assets/images/WechatIMG384.png';
+import './index.less';
 export default class Index extends Component {
   constructor(props) {
     super(props);
@@ -23,10 +24,14 @@ export default class Index extends Component {
     var imgArr = [img1, img2, img3, img4, img5, img6, img7, img8];
     console.log('render...');
     return (
-      <div>
+      <div className="cal-wrap">
         <Carousel autoplay>
           {imgArr.map((o, i) => {
-            return <img style={{ width: '800px', height: '80%' }} src={o} key={i} alt="" />;
+            return (
+              <div className="cal-img">
+                <img src={o} key={i} alt="" />
+              </div>
+            );
           })}
         </Carousel>
       </div>

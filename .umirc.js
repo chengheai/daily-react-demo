@@ -1,4 +1,3 @@
-
 // ref: https://umijs.org/config/
 export default {
   treeShaking: true,
@@ -28,6 +27,15 @@ export default {
       },
     ],
   ],
+  cssLoaderOptions: {
+    localIdentName: '[local]',
+  },
+  proxy: {
+    '/api': {
+      target: 'https://dog.ceo/',
+      changeOrigin: true,
+    },
+  },
   history: 'hash',
   publicPath: './',
   // exportStatic: true,

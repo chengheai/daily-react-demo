@@ -58,7 +58,7 @@ export default class Index extends Component {
   render() {
     const { title } = this.state;
     return (
-      <div>
+      <div style={{ marginTop: 20 }}>
         <Row>
           <Button type="primary" onClick={this.handleBindClick.bind(this)}>
             bind this改变title

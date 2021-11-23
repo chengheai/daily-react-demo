@@ -39,7 +39,7 @@ export default class mySkeleton extends React.Component {
   render() {
     const { loading } = this.state;
     return (
-      <div>
+      <div style={{ padding: '20px' }}>
         {/* <Switch checked={!loading} onChange={this.onChange} /> */}
 
         <List
