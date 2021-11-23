@@ -8,6 +8,7 @@ let TYPE = (() => {
       { path: '/props', name: '组件通信' },
       { path: '/lifecycle', name: '生命周期' },
       { path: '/message', name: 'message' },
+      { path: '/like', name: 'state测试' },
     ],
   };
 })();
