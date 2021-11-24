@@ -17,9 +17,6 @@ class Message extends Component {
     this.getData();
   }
   getData() {
-    this.setState({
-      loading: true,
-    });
     this.props.dispatch({
       type: 'message/fetchDogs',
     });

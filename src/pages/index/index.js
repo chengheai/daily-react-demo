@@ -41,9 +41,9 @@ export default class Menu extends React.Component {
               </Tooltip>
             </Col>
             <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
-              <Link to="/">
-                <Tooltip placement="top" title="首页">
-                  <Button type="primary">首页</Button>
+              <Link to="/hooks">
+                <Tooltip placement="top" title="hooks">
+                  <Button type="primary">hooks</Button>
                 </Tooltip>
               </Link>
             </Col>
@@ -85,7 +85,7 @@ export default class Menu extends React.Component {
             <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/message">
                 <Tooltip placement="top" title="异步加载message">
-                  <Button type="primary">异步加载message</Button>
+                  <Button type="primary">异步加载</Button>
                 </Tooltip>
               </Link>
             </Col>
@@ -93,6 +93,13 @@ export default class Menu extends React.Component {
               <Link to="/like">
                 <Tooltip placement="top" title="like操作">
                   <Button type="primary">like</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/routers">
+                <Tooltip placement="top" title="router示例🌰">
+                  <Button type="primary">路由</Button>
                 </Tooltip>
               </Link>
             </Col>

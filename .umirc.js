@@ -12,6 +12,8 @@ export default {
           immer: true,
         },
         dynamicImport: false,
+        default: 'zh-CN',
+        baseNavigator: false,
         title: 'daily-react-demo',
         dll: false,
 

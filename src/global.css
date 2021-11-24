@@ -15,3 +15,8 @@ body {
   opacity: 1;
   transition: opacity 250ms ease-in;
 }
+
+.common-wrap {
+  text-align: left;
+  padding: 20px;
+}
