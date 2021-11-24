@@ -33,66 +33,66 @@ export default class Menu extends React.Component {
       <div className={`${styles.normal} ${styles.bg}`}>
         <div style={{ padding: '15px 8px' }}>
           <Row>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Tooltip placement="top" title={popStr}>
                 <Button type="danger" onClick={() => this.changeStyle()}>
                   动画{stNumber}
                 </Button>
               </Tooltip>
             </Col>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/">
                 <Tooltip placement="top" title="首页">
                   <Button type="primary">首页</Button>
                 </Tooltip>
               </Link>
             </Col>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/calendar">
                 <Tooltip placement="top" title="日历">
                   <Button type="danger">日历</Button>
                 </Tooltip>
               </Link>
             </Col>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/skeleton">
                 <Tooltip placement="top" title="产品">
                   <Button type="primary">产品</Button>
                 </Tooltip>
               </Link>
             </Col>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/recursion">
                 <Tooltip placement="top" title="递归">
                   <Button type="primary">递归</Button>
                 </Tooltip>
               </Link>
             </Col>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/props">
                 <Tooltip placement="top" title="组件通信">
                   <Button type="primary">组件通信</Button>
                 </Tooltip>
               </Link>
             </Col>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/lifecycle">
                 <Tooltip placement="top" title="生命周期">
                   <Button type="primary">生命周期</Button>
                 </Tooltip>
               </Link>
             </Col>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/message">
                 <Tooltip placement="top" title="异步加载message">
                   <Button type="primary">异步加载message</Button>
                 </Tooltip>
               </Link>
             </Col>
-            <Col xs={6} sm={6} md={6} lg={3} xl={2}>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
               <Link to="/like">
                 <Tooltip placement="top" title="like操作">
-                  <Button>like</Button>
+                  <Button type="primary">like</Button>
                 </Tooltip>
               </Link>
             </Col>

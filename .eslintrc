@@ -1,8 +1,6 @@
 {
   "extends": "eslint-config-umi",
-  "rules": {
-    "no-useless-constructor":"off",
-    "no-lone-blocks":"off",
-    "no-unused-expressions":"off"
+  "rules":{
+
   }
 }

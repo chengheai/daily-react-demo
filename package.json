@@ -15,7 +15,7 @@
     "dva-logger": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-transition-group": "^4.2.1"
+    "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
@@ -25,7 +25,7 @@
     "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react": "^7.27.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
     "react-test-renderer": "^16.7.0",
