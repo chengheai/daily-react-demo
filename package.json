@@ -11,11 +11,12 @@
     "antd": "^3.19.5",
     "axios": "^0.24.0",
     "cowsay": "^1.4.0",
+    "dom-to-image": "^2.6.0",
     "dva": "^2.6.0-beta.6",
     "dva-logger": "^1.0.0",
+    "mockjs": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "mockjs": "^1.1.0",
     "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
