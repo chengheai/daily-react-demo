@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
-import { Button, Table } from 'antd';
+import { Popover, Table } from 'antd';
 class User extends Component {
   constructor(props) {
     super(props);
@@ -34,11 +34,33 @@ class User extends Component {
         width: 100,
         render: avatar => {
           return (
-            <img
-              src={avatar}
-              alt="avatar"
-              style={{ width: 50, height: 50, background: '#ffd591', padding: 3, borderRadius: 5 }}
-            />
+            <Popover
+              placement="right"
+              content={
+                <img
+                  src={avatar}
+                  alt="avatar"
+                  style={{
+                    width: 100,
+                    height: 100,
+                    padding: 3,
+                    borderRadius: 5,
+                  }}
+                />
+              }
+            >
+              <img
+                src={avatar}
+                alt="avatar"
+                style={{
+                  width: 50,
+                  height: 50,
+                  background: '#ffd591',
+                  padding: 3,
+                  borderRadius: 5,
+                }}
+              />
+            </Popover>
           );
         },
         fixed: 'left',
@@ -46,6 +68,14 @@ class User extends Component {
       {
         title: '手机号',
         dataIndex: 'phone',
+      },
+      {
+        title: '邮箱',
+        dataIndex: 'email',
+      },
+      {
+        title: '创建时间',
+        dataIndex: 'createTime',
       },
 
       {
@@ -80,7 +110,7 @@ class User extends Component {
   render() {
     const { isLoading, list } = this.state;
     return (
-      <div>
+      <div className="common-wrap">
         <Table
           rowKey={record => record.id}
           dataSource={list}

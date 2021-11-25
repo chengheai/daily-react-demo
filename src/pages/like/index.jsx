@@ -28,9 +28,9 @@ export default class LikeButton extends Component {
     const { liked, userInput } = this.state;
     console.log(this.state);
     return (
-      <div style={{ padding: '20px' }}>
-        <Row>
-          <Col span={8}>
+      <div className="common-wrap">
+        <Row gutter={10}>
+          <Col span={2}>
             <Button type="primary" onClick={() => this.clearAndFocusInput()}>
               点击focus并重置
             </Button>
@@ -44,7 +44,9 @@ export default class LikeButton extends Component {
             />
           </Col>
           <Col span={8}>
-            <h2 onClick={() => this.handleClick()}>{liked ? '喜欢' : '不喜欢'}</h2>
+            <Button type="danger" onClick={() => this.handleClick()}>
+              {liked ? '喜欢' : '不喜欢'}
+            </Button>
           </Col>
         </Row>
       </div>

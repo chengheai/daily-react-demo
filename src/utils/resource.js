@@ -11,6 +11,7 @@ let TYPE = (() => {
       { path: '/message', name: 'message' },
       { path: '/like', name: 'state测试' },
       { path: '/routers', name: 'router示例🌰' },
+      { path: '/users', name: 'mock示例' },
     ],
   };
 })();

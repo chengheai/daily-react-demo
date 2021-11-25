@@ -19,12 +19,10 @@ export default {
         }, // 说明
         avatar() {
           //用户头像
-          return Mock.Random.image(
-            '100×100',
-            Mock.Random.color(),
-            '#FFF',
-            this.name.substring(0, 1),
-          ).replace('×', 'x');
+          return Mock.Random.image('100×100', Mock.Random.color(), '#FFF', this.nickName).replace(
+            '×',
+            'x',
+          );
         },
       },
     ],
