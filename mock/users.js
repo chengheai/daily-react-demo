@@ -3,7 +3,7 @@ const Mock = require('mockjs');
 export default {
   'GET /mock/api/users': Mock.mock({
     status: 'success',
-    'list|100-200': [
+    'list|20-40': [
       {
         id: '@id', //随机id
         name: '@cname', //随机名称
