@@ -12,7 +12,7 @@ export default class Header extends Component {
     };
   }
   goBack = () => {
-    router.push('/');
+    router.goBack();
   };
   componentDidMount() {
     this.setState({

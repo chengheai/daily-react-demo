@@ -37,6 +37,10 @@ export default {
       target: 'https://dog.ceo/',
       changeOrigin: true,
     },
+    '/mock': {
+      target: 'http://localhost:8000/',
+      changeOrigin: true,
+    },
   },
   history: 'hash',
   publicPath: './',

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 export default class modal extends Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
   handleOk = () => {
     console.log('this.props: ', this.props);

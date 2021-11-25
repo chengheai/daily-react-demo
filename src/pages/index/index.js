@@ -103,6 +103,13 @@ export default class Menu extends React.Component {
                 </Tooltip>
               </Link>
             </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/users">
+                <Tooltip placement="top" title="mock示例">
+                  <Button type="primary">mock</Button>
+                </Tooltip>
+              </Link>
+            </Col>
           </Row>
         </div>
         <div className={styles.container}>
