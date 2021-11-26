@@ -1,0 +1,28 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  height: 60px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.slots {
+  &-left {
+    .flex-center();
+
+    background: brown;
+  }
+  &-mid {
+    .flex-center();
+
+    background: rgb(44, 3, 12);
+  }
+  &-right {
+    .flex-center();
+
+    background: rgb(214, 117, 5);
+  }
+}

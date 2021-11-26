@@ -2,7 +2,10 @@ import { queryData } from '../../services/user';
 
 export default {
   namespace: 'user',
-  state: {},
+  state: {
+    example: 'example',
+    arr: [],
+  },
 
   effects: {
     *getData({ payload, callback }, { call, put }) {

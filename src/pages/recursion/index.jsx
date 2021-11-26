@@ -183,9 +183,6 @@ export default class Menu extends React.Component {
         {list.map((item, key) => {
           let { functionName, itemFunctionsVOList = [] } = item;
           let padding = 50 * level;
-          {
-            /* let hasChildren = itemFunctionsVOList == null || itemFunctionsVOList.length === 0; */
-          }
           return (
             <div key={key} style={{ paddingLeft: padding }}>
               <div>

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
 import { Popover, Table } from 'antd';
+// 拿user并且同时拿message数据
+@connect(({ user, message }) => ({
+  data: user,
+  message,
+}))
 class User extends Component {
   constructor(props) {
     super(props);
@@ -94,6 +99,8 @@ class User extends Component {
   }
   componentDidMount() {
     this.getData();
+    // 拿到其他model数据
+    // console.log('==state=', this.props);
   }
   getData() {
     this.props.dispatch({
@@ -122,5 +129,4 @@ class User extends Component {
     );
   }
 }
-
-export default connect()(User);
+export default User;

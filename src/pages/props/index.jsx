@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Row } from 'antd';
 import Child from './child';
+const ButtonGroup = Button.Group;
 export default class Index extends Component {
   state = {
     title: 'child component',
@@ -58,12 +59,14 @@ export default class Index extends Component {
   render() {
     const { title } = this.state;
     return (
-      <div style={{ marginTop: 20 }}>
+      <div className="common-wrap">
         <Row>
-          <Button type="primary" onClick={this.handleBindClick.bind(this)}>
-            bind this改变title
-          </Button>
-          <Button onClick={this.handleClick}>改变title</Button>
+          <ButtonGroup>
+            <Button type="primary" onClick={this.handleBindClick.bind(this)}>
+              bind this改变title
+            </Button>
+            <Button onClick={this.handleClick}>改变title</Button>
+          </ButtonGroup>
           <Child myChange={this.handleChange} title={title} />
         </Row>
       </div>

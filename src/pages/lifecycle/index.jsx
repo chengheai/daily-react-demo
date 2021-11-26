@@ -14,8 +14,8 @@ export default class Index extends Component {
     super(props);
     // getDefaultProps：接收初始props
     // getInitialState：初始化state
+    this.state = {};
   }
-  state = {};
   componentWillMount() {
     console.log('componentWillMount...');
     // 组件挂载前触发

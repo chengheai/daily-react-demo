@@ -13,6 +13,8 @@ let TYPE = (() => {
       { path: '/routers', name: 'router示例🌰' },
       { path: '/users', name: 'mock示例' },
       { path: '/watermark', name: 'watermark水印' },
+      { path: '/decorator', name: 'decorator修饰符' },
+      { path: '/slots', name: 'slots插槽' },
     ],
   };
 })();
