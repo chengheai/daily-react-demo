@@ -15,14 +15,15 @@ class Detail extends Component {
   componentDidMount() {
     this.getData();
   }
-  getData() {
+  async getData() {
+    // 使用async
     const {
       match: {
         params: { id },
       },
     } = this.props;
-    if (this.props.data.lenth === 0) {
-      this.props.dispatch({
+    if (this.props.data.list.length === 0) {
+      await this.props.dispatch({
         type: 'routing/fetchTableData',
       });
     }
