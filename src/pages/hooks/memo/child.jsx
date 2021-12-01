@@ -3,7 +3,8 @@ import { Radio } from 'antd';
 let count = 0;
 let count1 = 0;
 function Child({ name, children }) {
-  // console.log('children: ', children);
+  // console.log('children: ', children)
+
   const [type, setType] = useState('normal');
   const clickTip = name => {
     count++;
