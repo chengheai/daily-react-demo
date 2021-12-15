@@ -30,10 +30,14 @@ body {
   -webkit-line-clamp: 2;
 }
 
- /* td 单行行溢出 ... 显示 */
+/* td 单行行溢出 ... 显示 */
 .txt-cut {
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.ml10{
+  margin-left: 10px;
 }

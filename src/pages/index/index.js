@@ -138,6 +138,13 @@ export default class Menu extends React.Component {
                 </Tooltip>
               </Link>
             </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/render">
+                <Tooltip placement="top" title="render">
+                  <Button type="primary">render</Button>
+                </Tooltip>
+              </Link>
+            </Col>
           </Row>
         </div>
         <div className={styles.container}>

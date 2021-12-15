@@ -16,6 +16,7 @@ let TYPE = (() => {
       { path: '/decorator', name: 'decorator修饰符🐙' },
       { path: '/slots', name: 'slots插槽🏄🏻‍♂️' },
       { path: '/form', name: '示例form🐳' },
+      { path: '/render', name: 'render🐳' },
     ],
   };
 })();
