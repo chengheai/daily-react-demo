@@ -145,6 +145,27 @@ export default class Menu extends React.Component {
                 </Tooltip>
               </Link>
             </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/hoc">
+                <Tooltip placement="top" title="Hoc Component">
+                  <Button type="primary">Hoc</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/context">
+                <Tooltip placement="top" title="context">
+                  <Button type="primary">context</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/context-old">
+                <Tooltip placement="top" title="context-old">
+                  <Button type="primary">context-old</Button>
+                </Tooltip>
+              </Link>
+            </Col>
           </Row>
         </div>
         <div className={styles.container}>

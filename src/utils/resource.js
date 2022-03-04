@@ -17,6 +17,9 @@ let TYPE = (() => {
       { path: '/slots', name: 'slots插槽🏄🏻‍♂️' },
       { path: '/form', name: '示例form🐳' },
       { path: '/render', name: 'render🐳' },
+      { path: '/hoc', name: 'hoc test🐳' },
+      { path: '/context', name: 'context🐳' },
+      { path: '/context-old', name: 'context-old🐳' },
     ],
   };
 })();
