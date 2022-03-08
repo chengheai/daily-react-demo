@@ -20,6 +20,8 @@ let TYPE = (() => {
       { path: '/hoc', name: 'hoc test🐳' },
       { path: '/context', name: 'context🐳' },
       { path: '/context-old', name: 'context-old🐳' },
+      { path: '/usual', name: 'usual🐳' },
+      { path: '/usexx', name: 'usexx' },
     ],
   };
 })();
