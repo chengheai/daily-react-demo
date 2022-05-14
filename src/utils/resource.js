@@ -22,6 +22,7 @@ let TYPE = (() => {
       { path: '/context-old', name: 'context-old🐳' },
       { path: '/usual', name: 'usual🐳' },
       { path: '/usexx', name: 'usexx' },
+      { path: '/timer', name: '定时器' },
     ],
   };
 })();
