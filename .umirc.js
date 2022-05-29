@@ -32,6 +32,9 @@ export default {
   cssLoaderOptions: {
     localIdentName: '[local]',
   },
+  alias: {
+    '@utils': 'src/utils',
+  },
   proxy: {
     '/api': {
       target: 'https://dog.ceo/',
