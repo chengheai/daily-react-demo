@@ -24,6 +24,7 @@ let TYPE = (() => {
       { path: '/usexx', name: 'usexx' },
       { path: '/timer', name: '定时器' },
       { path: '/imperative', name: 'useImperativeHandle' },
+      { path: '/super', name: 'super' },
     ],
   };
 })();

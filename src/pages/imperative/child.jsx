@@ -1,4 +1,4 @@
-import { useEffect, useState, forwardRef, useImperativeHandle } from 'react';
+import { useEffect, useState, forwardRef, useImperativeHandle, useCallback } from 'react';
 import { Select } from 'antd';
 import { generateRange, waitTime } from '@/utils';
 const { Option } = Select;
@@ -15,7 +15,9 @@ export default forwardRef((props, ref) => {
   const { setFinish } = props;
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line no-use-before-define
   }, [fetchData, setFinish]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchData = useCallback(async () => {
     console.log('fetch.....');
     setList([]);
