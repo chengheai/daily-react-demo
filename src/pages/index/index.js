@@ -201,6 +201,55 @@ export default class Menu extends React.Component {
                 </Tooltip>
               </Link>
             </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/state">
+                <Tooltip placement="top" title="state">
+                  <Button type="primary">state</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/props-pro">
+                <Tooltip placement="top" title="PropsComponent">
+                  <Button type="primary">props-pro</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/loading">
+                <Tooltip placement="top" title="loading">
+                  <Button type="primary">loading</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/test">
+                <Tooltip placement="top" title="test">
+                  <Button type="primary">test</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/render-pro">
+                <Tooltip placement="top" title="render-pro">
+                  <Button type="primary">render-pro</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/ref">
+                <Tooltip placement="top" title="ref">
+                  <Button type="primary">ref</Button>
+                </Tooltip>
+              </Link>
+            </Col>
+            <Col xs={6} sm={6} md={6} lg={3} xl={2} className={styles.mb20}>
+              <Link to="/big-data">
+                <Tooltip placement="top" title="海量数据📊">
+                  <Button type="primary">big-data</Button>
+                </Tooltip>
+              </Link>
+            </Col>
           </Row>
         </div>
         <div className={styles.container}>

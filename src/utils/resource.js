@@ -25,6 +25,12 @@ let TYPE = (() => {
       { path: '/timer', name: '定时器' },
       { path: '/imperative', name: 'useImperativeHandle' },
       { path: '/super', name: 'super' },
+      { path: '/state', name: 'state玄学' },
+      { path: '/props-pro', name: 'props-pro' },
+      { path: '/loading', name: 'loading' },
+      { path: '/test', name: 'test' },
+      { path: '/render-pro', name: 'render-pro' },
+      { path: '/big-data', name: '海量数据' },
     ],
   };
 })();
