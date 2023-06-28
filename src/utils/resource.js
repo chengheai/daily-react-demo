@@ -31,6 +31,8 @@ let TYPE = (() => {
       { path: '/test', name: 'test' },
       { path: '/render-pro', name: 'render-pro' },
       { path: '/big-data', name: '海量数据' },
+      { path: '/dom', name: 'dom事件' },
+      { path: '/0612', name: '0612' },
     ],
   };
 })();
